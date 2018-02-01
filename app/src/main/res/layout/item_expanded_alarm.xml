@@ -123,7 +123,7 @@
                     android:drawableStart="@drawable/ic_ringtone_24dp"
                     android:drawablePadding="@dimen/text_compound_drawable_padding"/>
 
-                <com.philliphsu.clock2.alarms.ui.TempCheckableImageButton
+                <com.emmanuelmess.clock2.alarms.ui.TempCheckableImageButton
                     android:id="@+id/vibrate"
                     style="@style/AlarmVibrateToggle"/>
 

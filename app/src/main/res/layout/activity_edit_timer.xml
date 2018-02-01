@@ -24,7 +24,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".timers.EditTimerActivity">
+    tools:context="com.emmanuelmess.clock2.timers.EditTimerActivity">
     
     <RelativeLayout
         android:id="@+id/edit_fields_layout"

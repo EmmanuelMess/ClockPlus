@@ -32,7 +32,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.emmanuelmess.clock2.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask">
             <intent-filter>
@@ -43,27 +43,27 @@
         </activity>
 
         <receiver
-            android:name=".alarms.background.UpcomingAlarmReceiver"
+            android:name="com.emmanuelmess.clock2.alarms.background.UpcomingAlarmReceiver"
             android:enabled="true"
             android:exported="false">
         </receiver>
 
         <activity
-            android:name=".settings.SettingsActivity"
+            android:name="com.emmanuelmess.clock2.settings.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.emmanuelmess.clock2.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.philliphsu.clock2.MainActivity"/>
+                android:value="com.philliphsu.clock2.com.emmanuelmess.clock2.MainActivity"/>
         </activity>
 
         <receiver
-            android:name=".alarms.background.PendingAlarmScheduler"
+            android:name="com.emmanuelmess.clock2.alarms.background.PendingAlarmScheduler"
             android:enabled="true"
             android:exported="false">
         </receiver>
         <receiver
-            android:name=".alarms.background.OnBootUpReceiver"
+            android:name="com.emmanuelmess.clock2.alarms.background.OnBootUpReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -72,28 +72,28 @@
         </receiver>
 
         <service
-            android:name=".alarms.background.OnBootUpAlarmScheduler"
+            android:name="com.emmanuelmess.clock2.alarms.background.OnBootUpAlarmScheduler"
             android:enabled="true"
             android:exported="false">
         </service>
 
         <activity
-            android:name=".timers.EditTimerActivity"
+            android:name="com.emmanuelmess.clock2.timers.EditTimerActivity"
             android:label="@string/title_activity_create_timer"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.emmanuelmess.clock2.MainActivity"
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.philliphsu.clock2.MainActivity"/>
+                android:value="com.philliphsu.clock2.com.emmanuelmess.clock2.MainActivity"/>
         </activity>
 
         <service
-            android:name=".timers.TimerNotificationService"
+            android:name="com.emmanuelmess.clock2.timers.TimerNotificationService"
             android:exported="false">
         </service>
 
         <activity
-            android:name=".ringtone.TimesUpActivity"
+            android:name="com.emmanuelmess.clock2.ringtone.TimesUpActivity"
             android:excludeFromRecents="true"
             android:label="@string/title_activity_ringtone"
             android:launchMode="singleTask"
@@ -101,7 +101,7 @@
             android:screenOrientation="nosensor">
         </activity>
         <activity
-            android:name=".ringtone.AlarmActivity"
+            android:name="com.emmanuelmess.clock2.ringtone.AlarmActivity"
             android:excludeFromRecents="true"
             android:label="@string/title_activity_ringtone"
             android:launchMode="singleTask"
@@ -110,17 +110,17 @@
         </activity>
 
         <service
-            android:name=".ringtone.playback.AlarmRingtoneService"
+            android:name="com.emmanuelmess.clock2.ringtone.playback.AlarmRingtoneService"
             android:enabled="true"
             android:exported="false">
         </service>
         <service
-            android:name=".ringtone.playback.TimerRingtoneService"
+            android:name="com.emmanuelmess.clock2.ringtone.playback.TimerRingtoneService"
             android:enabled="true"
             android:exported="false">
         </service>
         <service
-            android:name=".stopwatch.StopwatchNotificationService"
+            android:name="com.emmanuelmess.clock2.stopwatch.StopwatchNotificationService"
             android:enabled="true"
             android:exported="false">
         </service>

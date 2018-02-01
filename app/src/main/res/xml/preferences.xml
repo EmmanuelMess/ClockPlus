@@ -91,7 +91,7 @@
             android:summary="%s"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/title_category_timers">
-        <com.philliphsu.clock2.settings.ThemedRingtonePreference
+        <com.emmanuelmess.clock2.settings.ThemedRingtonePreference
             android:key="@string/key_timer_ringtone"
             android:title="@string/title_timer_ringtone"
             android:ringtoneType="alarm"
