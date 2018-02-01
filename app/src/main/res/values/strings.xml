@@ -1,4 +1,5 @@
 <!--
+  ~ Copyright 2018 Emmanuel Messulam
   ~ Copyright 2017 Phillip Hsu
   ~
   ~ This file is part of ClockPlus.
@@ -231,4 +232,5 @@
     <!-- https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/strings.xml -->
     <!-- The representation of a time duration when negative. An example is -1:14. This can be used with a countdown timer for example.-->
     <string name="negative_duration">\u2212<xliff:g id="time" example="1:14">%1$s</xliff:g></string>
+    <string name="no_ringtone">No ringone selected</string>
 </resources>

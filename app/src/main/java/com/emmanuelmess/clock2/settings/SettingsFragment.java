@@ -1,4 +1,5 @@
 /*
+ * Copyright 2018 Emmanuel Messulam
  * Copyright 2017 Phillip Hsu
  *
  * This file is part of ClockPlus.
@@ -82,7 +83,8 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
         if (pref instanceof RingtonePreference) {
             Uri ringtoneUri = Uri.parse(prefs.getString(key, ""));
             Ringtone ringtone = RingtoneManager.getRingtone(getActivity(), ringtoneUri);
-            pref.setSummary(ringtone.getTitle(getActivity()));
+            if(ringtone != null) pref.setSummary(ringtone.getTitle(getActivity()));
+            else pref.setSummary(R.string.no_ringtone);
         }
     }
 }
