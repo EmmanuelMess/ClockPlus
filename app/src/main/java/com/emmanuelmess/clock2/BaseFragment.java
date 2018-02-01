@@ -28,11 +28,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
  * Created by Phillip Hsu on 6/30/2016.
  */
 public abstract class BaseFragment extends Fragment {
+
+    private Unbinder unbinder;
+
     /**
      * Required empty public constructor. Subclasses do not
      * need to implement their own.
@@ -49,14 +53,14 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(contentLayout(), container, false);
-        ButterKnife.bind(this, view);
+        unbinder = ButterKnife.bind(this, view);
         return view;
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this); // Only for fragments!
+        unbinder.unbind(); // Only for fragments!
     }
 
     /**

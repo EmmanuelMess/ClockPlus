@@ -23,12 +23,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.emmanuelmess.clock2.alarms.Alarm;
-import com.emmanuelmess.clock2.list.OnListItemInteractionListener;
-import com.philliphsu.clock2.R;
 import com.emmanuelmess.clock2.alarms.misc.AlarmController;
 import com.emmanuelmess.clock2.alarms.misc.DaysOfWeek;
+import com.emmanuelmess.clock2.list.OnListItemInteractionListener;
+import com.philliphsu.clock2.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
@@ -39,8 +39,8 @@ import static com.emmanuelmess.clock2.alarms.misc.DaysOfWeek.NUM_DAYS;
  */
 public class CollapsedAlarmViewHolder extends BaseAlarmViewHolder {
 
-    @Bind(R.id.countdown) AlarmCountdown mCountdown;
-    @Bind(R.id.recurring_days) TextView mDays; // TODO: use `new DateFormatSymbols().getShortWeekdays()` to set texts
+    @BindView(R.id.countdown) AlarmCountdown mCountdown;
+    @BindView(R.id.recurring_days) TextView mDays; // TODO: use `new DateFormatSymbols().getShortWeekdays()` to set texts
 
     public CollapsedAlarmViewHolder(ViewGroup parent, OnListItemInteractionListener<Alarm> listener,
                                     AlarmController alarmController) {

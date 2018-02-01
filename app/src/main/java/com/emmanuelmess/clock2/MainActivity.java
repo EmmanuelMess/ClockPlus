@@ -43,14 +43,14 @@ import android.view.ViewGroup;
 
 import com.emmanuelmess.clock2.alarms.ui.AlarmsFragment;
 import com.emmanuelmess.clock2.data.BaseItemCursor;
-import com.emmanuelmess.clock2.timepickers.Utils;
-import com.philliphsu.clock2.R;
 import com.emmanuelmess.clock2.list.RecyclerViewFragment;
 import com.emmanuelmess.clock2.settings.SettingsActivity;
 import com.emmanuelmess.clock2.stopwatch.ui.StopwatchFragment;
+import com.emmanuelmess.clock2.timepickers.Utils;
 import com.emmanuelmess.clock2.timers.ui.TimersFragment;
+import com.philliphsu.clock2.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 
 import static com.emmanuelmess.clock2.list.RecyclerViewFragment.ACTION_SCROLL_TO_STABLE_ID;
 import static com.emmanuelmess.clock2.list.RecyclerViewFragment.EXTRA_SCROLL_TO_STABLE_ID;
@@ -67,13 +67,13 @@ public class MainActivity extends BaseActivity {
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private Drawable             mAddItemDrawable;
 
-    @Bind(R.id.container)
+    @BindView(R.id.container)
     ViewPager mViewPager;
 
-    @Bind(R.id.fab)
+    @BindView(R.id.fab)
     FloatingActionButton mFab;
 
-    @Bind(R.id.tabs)
+    @BindView(R.id.tabs)
     TabLayout mTabLayout;
 
     @Override

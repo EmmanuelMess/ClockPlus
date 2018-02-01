@@ -34,10 +34,10 @@ import android.widget.TextView;
 import com.emmanuelmess.clock2.BaseActivity;
 import com.emmanuelmess.clock2.dialogs.AddLabelDialog;
 import com.emmanuelmess.clock2.dialogs.AddLabelDialogController;
-import com.philliphsu.clock2.R;
 import com.emmanuelmess.clock2.util.FragmentTagUtils;
+import com.philliphsu.clock2.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.OnClick;
 import butterknife.OnLongClick;
 import butterknife.OnTouch;
@@ -55,19 +55,19 @@ public class EditTimerActivity extends BaseActivity implements AddLabelDialog.On
 
     private AddLabelDialogController mAddLabelDialogController;
 
-    @Bind(R.id.edit_fields_layout) ViewGroup mEditFieldsLayout;
-    @Bind(R.id.label) TextView mLabel;
-    @Bind(R.id.hour) EditText mHour;
-    @Bind(R.id.minute) EditText mMinute;
-    @Bind(R.id.second) EditText mSecond;
-    @Bind(R.id.hour_label) TextView mHourLabel;
-    @Bind(R.id.minute_label) TextView mMinuteLabel;
-    @Bind(R.id.second_label) TextView mSecondLabel;
-    @Bind(R.id.focus_grabber) View mFocusGrabber;
-    @Bind(R.id.fab) FloatingActionButton mFab;
+    @BindView(R.id.edit_fields_layout) ViewGroup mEditFieldsLayout;
+    @BindView(R.id.label) TextView mLabel;
+    @BindView(R.id.hour) EditText mHour;
+    @BindView(R.id.minute) EditText mMinute;
+    @BindView(R.id.second) EditText mSecond;
+    @BindView(R.id.hour_label) TextView mHourLabel;
+    @BindView(R.id.minute_label) TextView mMinuteLabel;
+    @BindView(R.id.second_label) TextView mSecondLabel;
+    @BindView(R.id.focus_grabber) View mFocusGrabber;
+    @BindView(R.id.fab) FloatingActionButton mFab;
     // Intentionally not using a (subclass of) GridLayoutNumpad, because
     // it is expedient to not adapt it for timers.
-    @Bind(R.id.numpad) GridLayout mNumpad;
+    @BindView(R.id.numpad) GridLayout mNumpad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
