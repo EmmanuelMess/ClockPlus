@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
+  ~ Copyright 2018 Emmanuel Messulam
   ~ Copyright 2017 Phillip Hsu
   ~
   ~ This file is part of ClockPlus.
@@ -28,53 +29,82 @@
     android:layout_marginEnd="@dimen/cardview_margin"
     app:cardBackgroundColor="?cardBackgroundColor">
 
-    <RelativeLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
 
         <TextView
             android:id="@+id/label"
-            style="@style/TimerLabel"/>
+            style="@style/TimerLabel"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <com.emmanuelmess.clock2.timers.ui.CountdownChronometer
             android:id="@+id/duration"
-            android:layout_below="@id/label"
-            style="@style/TimerText.Countdown"/>
+            style="@style/TimerText.Countdown"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label"/>
 
         <!--The default style has padding start and end, so we remove both-->
         <com.emmanuelmess.clock2.UntouchableSeekBar
             android:id="@+id/seek_bar"
-            android:layout_below="@id/duration"
-            style="@style/TimerSeekBar"/>
+            style="@style/TimerSeekBar"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/duration"/>
 
         <!-- Fake icon, so use dp for textSize -->
         <TextView
             android:id="@+id/add_one_minute"
-            android:layout_below="@id/seek_bar"
-            android:layout_alignParentStart="true"
-            style="@style/TimerAction.AddOneMinute"/>
+            style="@style/TimerAction.AddOneMinute"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/start_pause"/>
 
         <ImageButton
             android:id="@+id/start_pause"
+            style="@style/TimerAction"
+            android:layout_marginTop="8dp"
             android:src="@drawable/ic_start_24dp"
-            android:layout_below="@id/seek_bar"
-            android:layout_centerHorizontal="true"
-            style="@style/TimerAction"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seek_bar"/>
 
         <ImageButton
             android:id="@+id/stop"
+            style="@style/TimerAction"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
             android:src="@drawable/ic_stop_24dp"
-            android:layout_below="@id/seek_bar"
-            android:layout_alignParentEnd="true"
-            style="@style/TimerAction"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/start_pause"/>
 
         <ImageButton
             android:id="@+id/menu"
+            style="@style/TimerAction.Menu"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
             android:src="@drawable/ic_overflow_24dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            style="@style/TimerAction.Menu"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
-    </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.v7.widget.CardView>
