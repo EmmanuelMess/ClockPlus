@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
+  ~ Copyright 2018 Emmanuel Messulam
   ~ Copyright 2017 Phillip Hsu
   ~
   ~ This file is part of ClockPlus.
@@ -18,34 +19,41 @@
   ~ along with ClockPlus.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="horizontal"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:paddingTop="@dimen/item_margin_between_elements">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/linearLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/lap_number"
+        style="@style/TextAppearance.AppCompat.Subhead"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        style="@style/TextAppearance.AppCompat.Subhead"/>
+        app:layout_constraintBaseline_toBaselineOf="@+id/elapsed_time"
+        app:layout_constraintEnd_toStartOf="@+id/elapsed_time"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <com.emmanuelmess.clock2.stopwatch.ui.ChronometerWithMillis
         android:id="@+id/elapsed_time"
+        style="@style/TextAppearance.AppCompat.Subhead"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        style="@style/TextAppearance.AppCompat.Subhead"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/total_time"
+        app:layout_constraintStart_toEndOf="@+id/lap_number"/>
 
     <TextView
         android:id="@+id/total_time"
+        style="@style/TextAppearance.AppCompat.Subhead"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        style="@style/TextAppearance.AppCompat.Subhead"/>
+        app:layout_constraintBaseline_toBaselineOf="@+id/elapsed_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/elapsed_time"/>
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
