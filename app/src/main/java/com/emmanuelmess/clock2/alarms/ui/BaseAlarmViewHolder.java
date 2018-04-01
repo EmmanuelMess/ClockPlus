@@ -151,7 +151,7 @@ public abstract class BaseAlarmViewHolder extends BaseViewHolder<Alarm> {
      * a non-zero length.
      */
     protected void bindLabel(boolean visible, String label) {
-        setVisibility(mLabel, visible);
+        if(mLabel.length() == 0) setVisibility(mLabel, false);
         mLabel.setText(label);
     }
 

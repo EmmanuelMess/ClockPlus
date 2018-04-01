@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
+  ~ Copyright 2018 Emmanuel Messulam
   ~ Copyright 2017 Phillip Hsu
   ~
   ~ This file is part of ClockPlus.
@@ -21,64 +22,89 @@
 <!-- Wrapped in a LL so the divider is full width.
  The RelativeLayout defines padding for all children, so the
  divider would be padded too. -->
-<LinearLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:background="?selectableItemBackground">
 
     <!-- We could ALMOST get rid of this, if not for the
     AlarmCountdown needing to be anchored to the left of
     the label. -->
-    <RelativeLayout
-        android:layout_width="match_parent"
+
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/alarm_time_layout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/item_padding_top"
-        android:paddingStart="@dimen/item_padding_start"
-        android:paddingEnd="@dimen/item_padding_end">
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label"/>
 
-        <include layout="@layout/alarm_time_layout"/>
+    <TextView
+        android:id="@+id/label"
+        style="@style/BaseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint=""
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        <TextView
-            android:id="@+id/label"
-            style="@style/BaseLabel"
-            android:hint=""
-            android:textStyle="bold"
-            android:layout_below="@id/time_layout"
-            android:layout_marginBottom="@dimen/item_margin_between_elements"/>
+    <com.emmanuelmess.clock2.alarms.ui.AlarmCountdown
+        android:id="@+id/countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="@dimen/text_size_subhead"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
 
-        <com.emmanuelmess.clock2.alarms.ui.AlarmCountdown
-            android:id="@+id/countdown"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/text_size_subhead"
-            android:layout_marginStart="@dimen/item_margin_between_elements"
-            android:layout_below="@id/time_layout"
-            android:layout_toEndOf="@id/label"/>
+    <TextView
+        android:id="@+id/recurring_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Mon, Tue, Wed, Thu, Fri, Sat, Sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"/>
 
-        <TextView
-            android:id="@+id/recurring_days"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mon, Tue, Wed, Thu, Fri, Sat, Sun"
-            android:layout_below="@id/label"
-            android:layout_marginBottom="@dimen/item_margin_between_elements"/>
+    <!-- The drawable is added programmatically -->
+    <Button
+        android:id="@+id/dismiss"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="@dimen/text_compound_drawable_padding"
+        android:paddingEnd="@dimen/button_text_right_padding"
+        android:text="@string/dismiss_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recurring_days" />
 
-        <!-- The drawable is added programmatically -->
-        <Button
-            android:id="@+id/dismiss"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/recurring_days"
-            android:text="@string/dismiss_now"
-            android:drawablePadding="@dimen/text_compound_drawable_padding"
-            android:paddingEnd="@dimen/button_text_right_padding"
-            style="@style/Widget.AppCompat.Button.Colored"/>
 
-    </RelativeLayout>
+    <View
+        android:id="@+id/view2"
+        style="@style/Divider.Horizontal"
+        android:layout_width="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <View style="@style/Divider.Horizontal"
-          android:layout_marginTop="@dimen/item_margin_between_elements"/>
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
