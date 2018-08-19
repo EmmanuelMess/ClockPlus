@@ -39,7 +39,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import java.util.Calendar;
 

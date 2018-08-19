@@ -23,7 +23,7 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.StringRes;
 
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import java.util.concurrent.TimeUnit;
 

@@ -29,7 +29,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.philliphsu.bottomsheetpickers.time.BottomSheetTimePickerDialog;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 import com.emmanuelmess.clock2.alarms.Alarm;
 import com.emmanuelmess.clock2.alarms.data.AlarmCursor;
 import com.emmanuelmess.clock2.alarms.data.AlarmsListCursorLoader;
@@ -45,7 +45,7 @@ public class AlarmsFragment extends RecyclerViewFragment<Alarm, BaseAlarmViewHol
         AlarmsCursorAdapter> implements BottomSheetTimePickerDialog.OnTimeSetListener {
     private static final String TAG = "AlarmsFragment";
     private static final String KEY_EXPANDED_POSITION = "expanded_position";
-    public static final String EXTRA_SCROLL_TO_ALARM_ID = "com.philliphsu.clock2.alarms.extra.SCROLL_TO_ALARM_ID";
+    public static final String EXTRA_SCROLL_TO_ALARM_ID = "com.emmanuelmess.clock2.alarms.extra.SCROLL_TO_ALARM_ID";
 
     private AsyncAlarmsTableUpdateHandler mAsyncUpdateHandler;
     private AlarmController mAlarmController;

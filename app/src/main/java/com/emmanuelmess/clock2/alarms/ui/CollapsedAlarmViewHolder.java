@@ -26,7 +26,7 @@ import com.emmanuelmess.clock2.alarms.Alarm;
 import com.emmanuelmess.clock2.alarms.misc.AlarmController;
 import com.emmanuelmess.clock2.alarms.misc.DaysOfWeek;
 import com.emmanuelmess.clock2.list.OnListItemInteractionListener;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import butterknife.BindView;
 

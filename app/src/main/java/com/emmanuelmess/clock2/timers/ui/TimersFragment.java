@@ -40,7 +40,7 @@ import com.emmanuelmess.clock2.timers.data.AsyncTimersTableUpdateHandler;
 import com.emmanuelmess.clock2.timers.data.TimerCursor;
 import com.emmanuelmess.clock2.timers.data.TimersListCursorLoader;
 import com.emmanuelmess.clock2.util.ConfigurationUtils;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import static butterknife.ButterKnife.findById;
 
@@ -50,7 +50,7 @@ public class TimersFragment extends RecyclerViewFragment<Timer, TimerViewHolder,
     private static final int LANDSCAPE_LAYOUT_COLUMNS = 2;
 
     public static final int REQUEST_CREATE_TIMER = 0;
-    public static final String EXTRA_SCROLL_TO_TIMER_ID = "com.philliphsu.clock2.timers.extra.SCROLL_TO_TIMER_ID";
+    public static final String EXTRA_SCROLL_TO_TIMER_ID = "com.emmanuelmess.clock2.timers.extra.SCROLL_TO_TIMER_ID";
 
     private AsyncTimersTableUpdateHandler mAsyncTimersTableUpdateHandler;
 

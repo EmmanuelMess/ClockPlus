@@ -35,7 +35,7 @@ import com.emmanuelmess.clock2.timers.TimerNotificationService;
 import com.emmanuelmess.clock2.timers.data.AsyncTimersTableUpdateHandler;
 import com.emmanuelmess.clock2.timers.ui.CountdownChronometer;
 import com.emmanuelmess.clock2.timers.TimerController;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 public class TimesUpActivity extends RingtoneActivity<Timer> {
     private static final String TAG = "TimesUpActivity";

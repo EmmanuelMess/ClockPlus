@@ -34,15 +34,15 @@ import com.emmanuelmess.clock2.chronometer.ChronometerNotificationService;
 import com.emmanuelmess.clock2.stopwatch.data.AsyncLapsTableUpdateHandler;
 import com.emmanuelmess.clock2.stopwatch.ui.StopwatchFragment;
 import com.emmanuelmess.clock2.util.ContentIntentUtils;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 public class StopwatchNotificationService extends ChronometerNotificationService {
     private static final String TAG = "StopwatchNotifService";
 
-    public static final String ACTION_ADD_LAP = "com.philliphsu.clock2.stopwatch.action.ADD_LAP";
-    public static final String ACTION_UPDATE_LAP_TITLE = "com.philliphsu.clock2.stopwatch.action.UPDATE_LAP_TITLE";
+    public static final String ACTION_ADD_LAP = "com.emmanuelmess.clock2.stopwatch.action.ADD_LAP";
+    public static final String ACTION_UPDATE_LAP_TITLE = "com.emmanuelmess.clock2.stopwatch.action.UPDATE_LAP_TITLE";
 
-    public static final String EXTRA_LAP_NUMBER = "com.philliphsu.clock2.stopwatch.extra.LAP_NUMBER";
+    public static final String EXTRA_LAP_NUMBER = "com.emmanuelmess.clock2.stopwatch.extra.LAP_NUMBER";
 
     private AsyncLapsTableUpdateHandler mUpdateHandler;
     private SharedPreferences mPrefs;

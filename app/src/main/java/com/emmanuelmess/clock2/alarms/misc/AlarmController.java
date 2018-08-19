@@ -37,7 +37,7 @@ import com.emmanuelmess.clock2.util.ContentIntentUtils;
 import com.emmanuelmess.clock2.util.DelayedSnackbarHandler;
 import com.emmanuelmess.clock2.util.DurationUtils;
 import com.emmanuelmess.clock2.util.ParcelableUtil;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 import com.emmanuelmess.clock2.alarms.background.UpcomingAlarmReceiver;
 import com.emmanuelmess.clock2.ringtone.playback.AlarmRingtoneService;
 

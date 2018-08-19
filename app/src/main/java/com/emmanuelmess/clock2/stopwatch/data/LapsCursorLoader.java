@@ -29,7 +29,7 @@ import com.emmanuelmess.clock2.stopwatch.Lap;
  */
 public class LapsCursorLoader extends SQLiteCursorLoader<Lap, LapCursor> {
     public static final String ACTION_CHANGE_CONTENT
-            = "com.philliphsu.clock2.stopwatch.data.action.CHANGE_CONTENT";
+            = "com.emmanuelmess.clock2.stopwatch.data.action.CHANGE_CONTENT";
 
     public LapsCursorLoader(Context context) {
         super(context);

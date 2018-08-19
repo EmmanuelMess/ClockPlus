@@ -31,7 +31,7 @@ import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.RingtonePreference;
 
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 public class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
 

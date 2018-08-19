@@ -25,7 +25,7 @@ import android.widget.TextView;
 
 import com.emmanuelmess.clock2.list.BaseViewHolder;
 import com.emmanuelmess.clock2.stopwatch.Lap;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import butterknife.BindView;
 

@@ -33,7 +33,7 @@ import com.emmanuelmess.clock2.alarms.misc.AlarmController;
 import com.emmanuelmess.clock2.util.ContentIntentUtils;
 import com.emmanuelmess.clock2.util.ParcelableUtil;
 import com.emmanuelmess.clock2.util.TimeFormatUtils;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import static com.emmanuelmess.clock2.util.TimeFormatUtils.formatTime;
 
@@ -41,11 +41,11 @@ import static com.emmanuelmess.clock2.util.TimeFormatUtils.formatTime;
 public class UpcomingAlarmReceiver extends BroadcastReceiver {
     private static final String TAG = "UpcomingAlarmReceiver";
     /*TOneverDO: not private*/
-    private static final String ACTION_DISMISS_NOW = "com.philliphsu.clock2.action.DISMISS_NOW";
+    private static final String ACTION_DISMISS_NOW = "com.emmanuelmess.clock2.action.DISMISS_NOW";
 
-    public static final String ACTION_CANCEL_NOTIFICATION = "com.philliphsu.clock2.action.CANCEL_NOTIFICATION";
-    public static final String ACTION_SHOW_SNOOZING = "com.philliphsu.clock2.action.SHOW_SNOOZING";
-    public static final String EXTRA_ALARM = "com.philliphsu.clock2.extra.ALARM";
+    public static final String ACTION_CANCEL_NOTIFICATION = "com.emmanuelmess.clock2.action.CANCEL_NOTIFICATION";
+    public static final String ACTION_SHOW_SNOOZING = "com.emmanuelmess.clock2.action.SHOW_SNOOZING";
+    public static final String EXTRA_ALARM = "com.emmanuelmess.clock2.extra.ALARM";
 
     @Override
     public void onReceive(final Context context, final Intent intent) {

@@ -35,7 +35,7 @@ import com.emmanuelmess.clock2.BaseActivity;
 import com.emmanuelmess.clock2.dialogs.AddLabelDialog;
 import com.emmanuelmess.clock2.dialogs.AddLabelDialogController;
 import com.emmanuelmess.clock2.util.FragmentTagUtils;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -47,11 +47,11 @@ public class EditTimerActivity extends BaseActivity implements AddLabelDialog.On
     private static final int FIELD_LENGTH = 2;
     private static final String KEY_LABEL = "key_label";
 
-    public static final String EXTRA_HOUR = "com.philliphsu.clock2.edittimer.extra.HOUR";
-    public static final String EXTRA_MINUTE = "com.philliphsu.clock2.edittimer.extra.MINUTE";
-    public static final String EXTRA_SECOND = "com.philliphsu.clock2.edittimer.extra.SECOND";
-    public static final String EXTRA_LABEL = "com.philliphsu.clock2.edittimer.extra.LABEL";
-    public static final String EXTRA_START_TIMER = "com.philliphsu.clock2.edittimer.extra.START_TIMER";
+    public static final String EXTRA_HOUR = "com.emmanuelmess.clock2.edittimer.extra.HOUR";
+    public static final String EXTRA_MINUTE = "com.emmanuelmess.clock2.edittimer.extra.MINUTE";
+    public static final String EXTRA_SECOND = "com.emmanuelmess.clock2.edittimer.extra.SECOND";
+    public static final String EXTRA_LABEL = "com.emmanuelmess.clock2.edittimer.extra.LABEL";
+    public static final String EXTRA_START_TIMER = "com.emmanuelmess.clock2.edittimer.extra.START_TIMER";
 
     private AddLabelDialogController mAddLabelDialogController;
 

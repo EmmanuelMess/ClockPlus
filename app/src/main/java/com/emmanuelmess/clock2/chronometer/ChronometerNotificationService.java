@@ -32,16 +32,16 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.util.SimpleArrayMap;
 
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 /**
  * Created by Phillip Hsu on 9/10/2016.
  */
 public abstract class ChronometerNotificationService extends Service {
-    public static final String ACTION_START_PAUSE = "com.philliphsu.clock2.timers.action.START_PAUSE";
-    public static final String ACTION_STOP = "com.philliphsu.clock2.timers.action.STOP";
+    public static final String ACTION_START_PAUSE = "com.emmanuelmess.clock2.timers.action.START_PAUSE";
+    public static final String ACTION_STOP = "com.emmanuelmess.clock2.timers.action.STOP";
 
-    public static final String EXTRA_ACTION_ID = "com.philliphsu.clock2.extra.ID";
+    public static final String EXTRA_ACTION_ID = "com.emmanuelmess.clock2.extra.ID";
 
     // TODO: I think we'll need a collection of builders too. However, we can have a common immutable
     // builder instance with attributes that all timer notifications will have.

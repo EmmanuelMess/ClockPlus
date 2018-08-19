@@ -12,10 +12,10 @@ intuitively designed for ease of use.
 
 [<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
       alt="Get it on Google Play"
-      height="80">](https://play.google.com/store/apps/details?id=com.philliphsu.clock2)
+      height="80">](https://play.google.com/store/apps/details?id=com.emmanuelmess.clock2)
 [<img src="https://f-droid.org/badge/get-it-on.png"
       alt="Get it on F-Droid"
-      height="80">](https://f-droid.org/app/com.philliphsu.clock2)
+      height="80">](https://f-droid.org/app/com.emmanuelmess.clock2)
 
 <img src="https://cloud.githubusercontent.com/assets/19766085/19008497/830d2844-8720-11e6-8b8e-ff01ebcc26fe.png" width="200"/> <img src="https://cloud.githubusercontent.com/assets/19766085/19008498/8312eeaa-8720-11e6-9dc8-2079eb9c50f7.png" width="200"/> <img src="https://cloud.githubusercontent.com/assets/19766085/19008382/cc800614-871f-11e6-8fab-d1be69807e91.png"  width="200" />
 

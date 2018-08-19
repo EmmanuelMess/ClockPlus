@@ -30,15 +30,15 @@ import com.emmanuelmess.clock2.alarms.Alarm;
 import com.emmanuelmess.clock2.alarms.misc.AlarmController;
 import com.emmanuelmess.clock2.alarms.misc.AlarmPreferences;
 import com.emmanuelmess.clock2.util.TimeFormatUtils;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import static com.emmanuelmess.clock2.util.TimeFormatUtils.formatTime;
 
 public class AlarmRingtoneService extends RingtoneService<Alarm> {
     private static final String TAG = "AlarmRingtoneService";
     /* TOneverDO: not private */
-    private static final String ACTION_SNOOZE = "com.philliphsu.clock2.ringtone.action.SNOOZE";
-    private static final String ACTION_DISMISS = "com.philliphsu.clock2.ringtone.action.DISMISS";
+    private static final String ACTION_SNOOZE = "com.emmanuelmess.clock2.ringtone.action.SNOOZE";
+    private static final String ACTION_DISMISS = "com.emmanuelmess.clock2.ringtone.action.DISMISS";
 
     private AlarmController mAlarmController;
 

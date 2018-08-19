@@ -30,7 +30,7 @@ import android.util.Log;
 import com.emmanuelmess.clock2.chronometer.ChronometerNotificationService;
 import com.emmanuelmess.clock2.util.ParcelableUtil;
 import com.emmanuelmess.clock2.MainActivity;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 import com.emmanuelmess.clock2.timers.data.AsyncTimersTableUpdateHandler;
 import com.emmanuelmess.clock2.timers.data.TimerCursor;
 import com.emmanuelmess.clock2.util.ContentIntentUtils;
@@ -45,11 +45,11 @@ import com.emmanuelmess.clock2.util.ContentIntentUtils;
 public class TimerNotificationService extends ChronometerNotificationService {
     private static final String TAG = "TimerNotifService";
 
-    private static final String ACTION_CANCEL_NOTIFICATION = "com.philliphsu.clock2.timers.action.CANCEL_NOTIFICATION";
-    public static final String ACTION_ADD_ONE_MINUTE = "com.philliphsu.clock2.timers.action.ADD_ONE_MINUTE";
+    private static final String ACTION_CANCEL_NOTIFICATION = "com.emmanuelmess.clock2.timers.action.CANCEL_NOTIFICATION";
+    public static final String ACTION_ADD_ONE_MINUTE = "com.emmanuelmess.clock2.timers.action.ADD_ONE_MINUTE";
 
-    public static final String EXTRA_TIMER = "com.philliphsu.clock2.timers.extra.TIMER";
-    private static final String EXTRA_CANCEL_TIMER_ID = "com.philliphsu.clock2.timers.extra.CANCEL_TIMER_ID";
+    public static final String EXTRA_TIMER = "com.emmanuelmess.clock2.timers.extra.TIMER";
+    private static final String EXTRA_CANCEL_TIMER_ID = "com.emmanuelmess.clock2.timers.extra.CANCEL_TIMER_ID";
 
     private AsyncTimersTableUpdateHandler mUpdateHandler;
     private final SimpleArrayMap<Long, Timer> mTimers = new SimpleArrayMap<>();

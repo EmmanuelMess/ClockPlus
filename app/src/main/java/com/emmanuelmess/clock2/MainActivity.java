@@ -48,7 +48,7 @@ import com.emmanuelmess.clock2.settings.SettingsActivity;
 import com.emmanuelmess.clock2.stopwatch.ui.StopwatchFragment;
 import com.emmanuelmess.clock2.timepickers.Utils;
 import com.emmanuelmess.clock2.timers.ui.TimersFragment;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import butterknife.BindView;
 
@@ -62,7 +62,7 @@ public class MainActivity extends BaseActivity {
     public static final int    PAGE_TIMERS          = 1;
     public static final int    PAGE_STOPWATCH       = 2;
     public static final int    REQUEST_THEME_CHANGE = 5;
-    public static final String EXTRA_SHOW_PAGE      = "com.philliphsu.clock2.extra.SHOW_PAGE";
+    public static final String EXTRA_SHOW_PAGE      = "com.emmanuelmess.clock2.extra.SHOW_PAGE";
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private Drawable             mAddItemDrawable;

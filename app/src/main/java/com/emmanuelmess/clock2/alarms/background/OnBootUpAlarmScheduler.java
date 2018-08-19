@@ -35,12 +35,12 @@ import com.emmanuelmess.clock2.alarms.misc.AlarmController;
 public class OnBootUpAlarmScheduler extends IntentService {
     // TODO: Rename actions, choose action names that describe tasks that this
     // IntentService can perform, e.g. ACTION_FETCH_NEW_ITEMS
-    private static final String ACTION_FOO = "com.philliphsu.clock2.action.FOO";
-    private static final String ACTION_BAZ = "com.philliphsu.clock2.action.BAZ";
+    private static final String ACTION_FOO = "com.emmanuelmess.clock2.action.FOO";
+    private static final String ACTION_BAZ = "com.emmanuelmess.clock2.action.BAZ";
 
     // TODO: Rename parameters
-    private static final String EXTRA_PARAM1 = "com.philliphsu.clock2.extra.PARAM1";
-    private static final String EXTRA_PARAM2 = "com.philliphsu.clock2.extra.PARAM2";
+    private static final String EXTRA_PARAM1 = "com.emmanuelmess.clock2.extra.PARAM1";
+    private static final String EXTRA_PARAM2 = "com.emmanuelmess.clock2.extra.PARAM2";
 
     public OnBootUpAlarmScheduler() {
         super("OnBootUpAlarmScheduler");

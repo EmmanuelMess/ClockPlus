@@ -27,7 +27,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 import com.emmanuelmess.clock2.ringtone.playback.RingtoneLoop;
 
 /**

@@ -29,7 +29,7 @@ import android.view.ViewGroup;
 
 import com.emmanuelmess.clock2.alarms.Alarm;
 import com.emmanuelmess.clock2.ringtone.playback.RingtoneService;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 import com.emmanuelmess.clock2.alarms.misc.AlarmController;
 import com.emmanuelmess.clock2.ringtone.playback.AlarmRingtoneService;
 import com.emmanuelmess.clock2.util.TimeFormatUtils;

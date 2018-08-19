@@ -44,7 +44,7 @@ import com.emmanuelmess.clock2.timers.TimerController;
 import com.emmanuelmess.clock2.timers.data.AsyncTimersTableUpdateHandler;
 import com.emmanuelmess.clock2.util.FragmentTagUtils;
 import com.emmanuelmess.clock2.util.ProgressBarUtils;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import butterknife.BindView;
 import butterknife.OnClick;

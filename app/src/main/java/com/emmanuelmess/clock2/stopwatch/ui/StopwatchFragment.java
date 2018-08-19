@@ -45,7 +45,7 @@ import com.emmanuelmess.clock2.stopwatch.StopwatchNotificationService;
 import com.emmanuelmess.clock2.stopwatch.data.LapCursor;
 import com.emmanuelmess.clock2.stopwatch.data.LapsCursorLoader;
 import com.emmanuelmess.clock2.util.ProgressBarUtils;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import java.lang.ref.WeakReference;
 

@@ -18,7 +18,7 @@
   ~ along with ClockPlus.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<manifest package="com.philliphsu.clock2"
+<manifest package="com.emmanuelmess.clock2"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.VIBRATE"/>
@@ -54,7 +54,7 @@
             android:parentActivityName="com.emmanuelmess.clock2.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.philliphsu.clock2.com.emmanuelmess.clock2.MainActivity"/>
+                android:value="com.emmanuelmess.clock2.MainActivity"/>
         </activity>
 
         <receiver
@@ -84,7 +84,7 @@
             android:windowSoftInputMode="adjustNothing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.philliphsu.clock2.com.emmanuelmess.clock2.MainActivity"/>
+                android:value="com.emmanuelmess.clock2.MainActivity"/>
         </activity>
 
         <service
@@ -97,7 +97,7 @@
             android:excludeFromRecents="true"
             android:label="@string/title_activity_ringtone"
             android:launchMode="singleTask"
-            android:taskAffinity="com.philliphsu.clock2.RingtoneActivity"
+            android:taskAffinity="com.emmanuelmess.clock2.RingtoneActivity"
             android:screenOrientation="nosensor">
         </activity>
         <activity
@@ -105,7 +105,7 @@
             android:excludeFromRecents="true"
             android:label="@string/title_activity_ringtone"
             android:launchMode="singleTask"
-            android:taskAffinity="com.philliphsu.clock2.RingtoneActivity"
+            android:taskAffinity="com.emmanuelmess.clock2.RingtoneActivity"
             android:screenOrientation="nosensor">
         </activity>
 

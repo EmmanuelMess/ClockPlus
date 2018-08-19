@@ -34,7 +34,7 @@ import android.os.Vibrator;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 import com.emmanuelmess.clock2.ringtone.RingtoneActivity;
 import com.emmanuelmess.clock2.util.LocalBroadcastHelper;
 import com.emmanuelmess.clock2.util.ParcelableUtil;
@@ -55,7 +55,7 @@ public abstract class RingtoneService<T extends Parcelable> extends Service {
     private static final String TAG = "RingtoneService";
 
     // public okay
-    public static final String ACTION_NOTIFY_MISSED = "com.philliphsu.clock2.ringtone.action.NOTIFY_MISSED";
+    public static final String ACTION_NOTIFY_MISSED = "com.emmanuelmess.clock2.ringtone.action.NOTIFY_MISSED";
 //    public static final String EXTRA_ITEM_ID = RingtoneActivity.EXTRA_ITEM_ID;
     public static final String EXTRA_RINGING_OBJECT = RingtoneActivity.EXTRA_RINGING_OBJECT;
 

@@ -41,7 +41,7 @@ import com.emmanuelmess.clock2.dialogs.RingtonePickerDialogController;
 import com.emmanuelmess.clock2.list.OnListItemInteractionListener;
 import com.emmanuelmess.clock2.timepickers.Utils;
 import com.emmanuelmess.clock2.util.FragmentTagUtils;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import butterknife.BindView;
 import butterknife.BindViews;

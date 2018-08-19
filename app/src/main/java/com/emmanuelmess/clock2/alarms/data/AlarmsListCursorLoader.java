@@ -29,7 +29,7 @@ import com.emmanuelmess.clock2.data.SQLiteCursorLoader;
  */
 public class AlarmsListCursorLoader extends SQLiteCursorLoader<Alarm, AlarmCursor> {
     public static final String ACTION_CHANGE_CONTENT
-            = "com.philliphsu.clock2.alarms.data.action.CHANGE_CONTENT";
+            = "com.emmanuelmess.clock2.alarms.data.action.CHANGE_CONTENT";
 
     public AlarmsListCursorLoader(Context context) {
         super(context);

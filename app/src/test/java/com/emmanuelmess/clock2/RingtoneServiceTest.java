@@ -19,7 +19,7 @@
 
 package com.emmanuelmess.clock2;
 
-import com.philliphsu.clock2.BuildConfig;
+import com.emmanuelmess.clock2.BuildConfig;
 
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricGradleTestRunner;

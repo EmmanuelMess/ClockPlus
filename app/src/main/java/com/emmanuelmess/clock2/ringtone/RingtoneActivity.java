@@ -37,7 +37,7 @@ import com.emmanuelmess.clock2.BaseActivity;
 import com.emmanuelmess.clock2.ringtone.playback.RingtoneService;
 import com.emmanuelmess.clock2.util.LocalBroadcastHelper;
 import com.emmanuelmess.clock2.util.ParcelableUtil;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -51,9 +51,9 @@ public abstract class RingtoneActivity<T extends Parcelable> extends BaseActivit
     private static final String TAG = "RingtoneActivity";
 
     // Shared with RingtoneService
-    public static final String ACTION_FINISH = "com.philliphsu.clock2.ringtone.action.FINISH";
-    public static final String EXTRA_RINGING_OBJECT = "com.philliphsu.clock2.ringtone.extra.RINGING_OBJECT";
-    public static final String ACTION_SHOW_SILENCED = "com.philliphsu.clock2.ringtone.action.SHOW_SILENCED";
+    public static final String ACTION_FINISH = "com.emmanuelmess.clock2.ringtone.action.FINISH";
+    public static final String EXTRA_RINGING_OBJECT = "com.emmanuelmess.clock2.ringtone.extra.RINGING_OBJECT";
+    public static final String ACTION_SHOW_SILENCED = "com.emmanuelmess.clock2.ringtone.action.SHOW_SILENCED";
 
     private static boolean sIsAlive = false;
     private T mRingingObject;

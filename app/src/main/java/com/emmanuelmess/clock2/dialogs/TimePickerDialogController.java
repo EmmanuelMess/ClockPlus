@@ -31,7 +31,7 @@ import android.text.format.DateFormat;
 import com.philliphsu.bottomsheetpickers.time.BottomSheetTimePickerDialog;
 import com.philliphsu.bottomsheetpickers.time.grid.GridTimePickerDialog;
 import com.philliphsu.bottomsheetpickers.time.numberpad.NumberPadTimePickerDialog;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 /**
  * Created by Phillip Hsu on 9/6/2016.

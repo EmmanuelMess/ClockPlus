@@ -35,6 +35,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.emmanuelmess.clock2.R;
 import com.emmanuelmess.clock2.alarms.Alarm;
 import com.emmanuelmess.clock2.alarms.misc.AlarmController;
 import com.emmanuelmess.clock2.alarms.misc.AlarmPreferences;
@@ -47,7 +48,6 @@ import com.emmanuelmess.clock2.timepickers.Utils;
 import com.emmanuelmess.clock2.util.FragmentTagUtils;
 import com.emmanuelmess.clock2.util.TimeTextUtils;
 import com.philliphsu.bottomsheetpickers.time.BottomSheetTimePickerDialog.OnTimeSetListener;
-import com.philliphsu.clock2.R;
 
 import java.util.Date;
 

@@ -25,7 +25,7 @@ import android.support.v7.widget.AppCompatEditText;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import static com.emmanuelmess.clock2.util.KeyboardUtils.showKeyboard;
 

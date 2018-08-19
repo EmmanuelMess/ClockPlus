@@ -23,7 +23,7 @@ import android.content.Context;
 import android.preference.PreferenceManager;
 import android.support.annotation.StringRes;
 
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 /**
  * Created by Phillip Hsu on 6/3/2016.

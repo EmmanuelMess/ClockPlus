@@ -29,7 +29,7 @@ import com.emmanuelmess.clock2.timers.Timer;
  */
 public class TimersListCursorLoader extends SQLiteCursorLoader<Timer, TimerCursor> {
     public static final String ACTION_CHANGE_CONTENT
-            = "com.philliphsu.clock2.timers.data.action.CHANGE_CONTENT";
+            = "com.emmanuelmess.clock2.timers.data.action.CHANGE_CONTENT";
 
     public TimersListCursorLoader(Context context) {
         super(context);

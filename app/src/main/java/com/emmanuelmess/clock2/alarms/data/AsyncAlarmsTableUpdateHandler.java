@@ -25,7 +25,7 @@ import android.view.View;
 
 import com.emmanuelmess.clock2.alarms.Alarm;
 import com.emmanuelmess.clock2.data.AsyncDatabaseTableUpdateHandler;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 import com.emmanuelmess.clock2.list.ScrollHandler;
 import com.emmanuelmess.clock2.alarms.misc.AlarmController;
 

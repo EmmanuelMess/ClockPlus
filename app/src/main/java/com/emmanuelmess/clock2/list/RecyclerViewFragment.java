@@ -35,7 +35,7 @@ import android.widget.TextView;
 import com.emmanuelmess.clock2.BaseFragment;
 import com.emmanuelmess.clock2.data.BaseItemCursor;
 import com.emmanuelmess.clock2.data.ObjectWithId;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import butterknife.BindView;
 
@@ -52,8 +52,8 @@ public abstract class RecyclerViewFragment<
         OnListItemInteractionListener<T>,
         ScrollHandler {
 
-    public static final String ACTION_SCROLL_TO_STABLE_ID = "com.philliphsu.clock2.list.action.SCROLL_TO_STABLE_ID";
-    public static final String EXTRA_SCROLL_TO_STABLE_ID = "com.philliphsu.clock2.list.extra.SCROLL_TO_STABLE_ID";
+    public static final String ACTION_SCROLL_TO_STABLE_ID = "com.emmanuelmess.clock2.list.action.SCROLL_TO_STABLE_ID";
+    public static final String EXTRA_SCROLL_TO_STABLE_ID = "com.emmanuelmess.clock2.list.extra.SCROLL_TO_STABLE_ID";
 
     private A mAdapter;
     private long mScrollToStableId = RecyclerView.NO_ID;

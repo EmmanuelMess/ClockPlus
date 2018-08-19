@@ -29,7 +29,7 @@ import android.text.format.DateUtils;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
 
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 
 import java.util.Formatter;
 import java.util.IllegalFormatException;

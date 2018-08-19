@@ -28,7 +28,7 @@ import android.provider.Settings;
 import android.support.v4.app.NotificationCompat;
 
 import com.emmanuelmess.clock2.timers.Timer;
-import com.philliphsu.clock2.R;
+import com.emmanuelmess.clock2.R;
 import com.emmanuelmess.clock2.timers.TimerController;
 import com.emmanuelmess.clock2.timers.TimerNotificationService;
 import com.emmanuelmess.clock2.timers.data.AsyncTimersTableUpdateHandler;
