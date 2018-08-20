@@ -233,4 +233,6 @@
     <!-- The representation of a time duration when negative. An example is -1:14. This can be used with a countdown timer for example.-->
     <string name="negative_duration">\u2212<xliff:g id="time" example="1:14">%1$s</xliff:g></string>
     <string name="no_ringtone">No ringone selected</string>
+    <string name="reportcrash">The app has crashed, please report sending mail</string>
+    <string name="reportcrashsubject">ClockPlus crash report</string>
 </resources>
