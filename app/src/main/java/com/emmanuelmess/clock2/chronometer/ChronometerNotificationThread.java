@@ -40,7 +40,7 @@ import android.support.v4.app.NotificationCompat;
 public class ChronometerNotificationThread extends HandlerThread {
     private static final String TAG = "ChronomNotifThread";
 
-    private static final int MSG_WHAT = 2;
+    static final int MSG_WHAT = 2;
 
     private final ChronometerDelegate mDelegate;
     private final NotificationManager mNotificationManager;
@@ -49,7 +49,7 @@ public class ChronometerNotificationThread extends HandlerThread {
     private final String mNoteTag;
     private final int mNoteId;
 
-    private Handler mHandler;
+    private ChronometerNotificationThreadHandler mHandler;
 
     /**
      * @param delegate Configured by the client service, including whether to be counting down or not.
@@ -77,20 +77,13 @@ public class ChronometerNotificationThread extends HandlerThread {
 
     // There won't be a memory leak since our handler is using a looper that is not
     // associated with the main thread. The full Lint warning confirmed this.
-    @SuppressLint("HandlerLeak")
     @Override
     protected void onLooperPrepared() {
         // This is called after the looper has completed initializing, but before
         // it starts looping through its message queue. Right now, there is no
         // message queue, so this is the place to create it.
         // By default, the constructor associates this handler with this thread's looper.
-        mHandler = new Handler() {
-            @Override
-            public void handleMessage(Message m) {
-                updateNotification(true);
-                sendMessageDelayed(Message.obtain(this, MSG_WHAT), 1000);
-            }
-        };
+        mHandler = new ChronometerNotificationThreadHandler(this);
         // Once the handler is initialized, we may immediately begin our work.
         mHandler.sendMessageDelayed(Message.obtain(mHandler, MSG_WHAT), 1000);
     }
