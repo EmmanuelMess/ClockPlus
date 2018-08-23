@@ -1,4 +1,5 @@
 /*
+ * Copyright 2018 Emmanuel Messulam
  * Copyright 2017 Phillip Hsu
  *
  * This file is part of ClockPlus.
