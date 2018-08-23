@@ -1,4 +1,5 @@
 /*
+ * Copyright 2018 Emmanuel Messulam
  * Copyright 2017 Phillip Hsu
  *
  * This file is part of ClockPlus.
@@ -294,10 +295,7 @@ public abstract class ChronometerNotificationService extends Service {
      */
     @CallSuper
     protected void releaseResources(long id) {
-        mNoteBuilders.remove(id);
         quitThread(id);
-        mThreads.remove(id);
-        mDelegates.remove(id);
     }
 
     /**
@@ -394,5 +392,9 @@ public abstract class ChronometerNotificationService extends Service {
         if (thread != null && thread.isAlive()) {
             thread.quit();
         }
+
+        mNoteBuilders.remove(id);
+        mThreads.remove(id);
+        mDelegates.remove(id);
     }
 }
