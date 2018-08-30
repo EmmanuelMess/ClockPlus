@@ -2,28 +2,28 @@
   ~ Copyright 2018 Emmanuel Messulam
   ~ Copyright 2017 Phillip Hsu
   ~
-  ~ This file is part of ClockPlus.
+  ~ This file is part of Material Clock (formerly ClockPlus).
   ~
-  ~ ClockPlus is free software: you can redistribute it and/or modify
+  ~ Material Clock (formerly ClockPlus) is free software: you can redistribute it and/or modify
   ~ it under the terms of the GNU General Public License as published by
   ~ the Free Software Foundation, either version 3 of the License, or
   ~ (at your option) any later version.
   ~
-  ~ ClockPlus is distributed in the hope that it will be useful,
+  ~ Material Clock (formerly ClockPlus) is distributed in the hope that it will be useful,
   ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
   ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   ~ GNU General Public License for more details.
   ~
   ~ You should have received a copy of the GNU General Public License
-  ~ along with ClockPlus.  If not, see <http://www.gnu.org/licenses/>.
+  ~ along with Material Clock (formerly ClockPlus).  If not, see <http://www.gnu.org/licenses/>.
   -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">Clock+</string>
+    <string name="app_name">Material Clock</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
-    <string name="title_activity_ringtone">Clock+</string>
+    <string name="title_activity_ringtone">Material Clock</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
@@ -234,5 +234,5 @@
     <string name="negative_duration">\u2212<xliff:g id="time" example="1:14">%1$s</xliff:g></string>
     <string name="no_ringtone">No ringone selected</string>
     <string name="reportcrash">The app has crashed, please report sending mail</string>
-    <string name="reportcrashsubject">ClockPlus crash report</string>
+    <string name="reportcrashsubject">Material Clock crash report</string>
 </resources>
